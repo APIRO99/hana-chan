@@ -1,6 +1,6 @@
-import { getWaifu } from '../services/Waifus';
+import { getWaifu } from '../services/Waifus.js';
 
-export const useMessages = (client:any) => {
+export default function useMessages(client:any) {
   client.on('messageCreate', async (message:any) => {
   	if (!message.guild) return;
 	  if (!client.application?.owner) await client.application?.fetch();

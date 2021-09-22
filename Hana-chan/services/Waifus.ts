@@ -1,4 +1,5 @@
-const fetch = (...args:any) => import('node-fetch').then(({default: fetch}) => fetch(args));
+import fetch from 'node-fetch'
+// const fetch = require('node-fetch')
 
 export const getWaifu = async () => {
   const response = await fetch(`${process.env.WAIFU_API}/sfw/neko`);

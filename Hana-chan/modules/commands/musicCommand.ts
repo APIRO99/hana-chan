@@ -6,7 +6,7 @@ import {
 	joinVoiceChannel,
 	VoiceConnectionStatus,
 } from '@discordjs/voice';
-import { Track, MusicSubscription } from '../../interfaces/musicInterfaces';
+import { Track, MusicSubscription } from '../../interfaces/musicInterfaces.js';
 
 export const useMusicCommand = (client:any) => {
 

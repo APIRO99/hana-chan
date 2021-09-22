@@ -1,7 +1,7 @@
-import { useDeployCommand } from './deployCommand';
-import { useMusicCommand }  from './musicCommand'
+import { useDeployCommand } from './deployCommand.js';
+import { useMusicCommand }  from './musicCommand.js'
 
-export const useCommands:any = (client:any) => {
+export default function useCommands(client:any) {
   client.on('interactionCreate', async (interaction:any) => {
     if (!interaction.isCommand()) return;
     if (!client.application?.owner) await client.application?.fetch();

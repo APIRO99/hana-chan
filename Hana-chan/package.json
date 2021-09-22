@@ -2,9 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
+  "type": "module",
   "scripts": {
-    "dev": "clear && nodemon --watch './**/*.ts' --exec 'ts-node' server.ts",
+    "dev": "clear && nodemon --watch './**/*.ts' --exec 'node --loader ts-node/esm' server.ts",
+    "dev2": "clear && node --loader ts-node/esm server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

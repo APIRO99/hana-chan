@@ -1,4 +1,5 @@
-import { getInfo } from 'ytdl-core';
+import ytdlcore from 'ytdl-core';
+const { getInfo } = ytdlcore
 import { raw as ytdl } from 'youtube-dl-exec';
 import { promisify } from 'util';
 import {
