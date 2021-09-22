@@ -13,11 +13,5 @@ export const useMessages = (client:any) => {
       message.reply(`Bro? 🧐📷\n${url}`);
     }
 
-    if (message.content.toUpperCase() === 'WHO IS YOUR MASTER?') {
-      if (authorOwner)
-        message.reply(`You are my master, ${process.env['APIRO']}`);
-      else
-        message.reply(`My master is ${process.env['APIRO']} so you must respect him`);
-    }
   })
 } 
