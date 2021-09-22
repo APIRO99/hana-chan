@@ -1,4 +1,4 @@
-import { Interaction, GuildMember, Snowflake } from 'discord.js';
+import { Client, Interaction, GuildMember, Snowflake } from 'discord.js';
 import {
 	AudioPlayerStatus,
 	AudioResource,
@@ -8,7 +8,7 @@ import {
 } from '@discordjs/voice';
 import { Track, MusicSubscription } from '../../interfaces/musicInterfaces.js';
 
-export const useMusicCommand = (client:any) => {
+export const useMusicCommand = (client:Client) => {
 
 	/**
 	 * Maps guild IDs to music subscriptions, which exist if the bot has an active VoiceConnection to the guild.

@@ -5,7 +5,7 @@ import useMessages from './modules/messages.js'
 import useCommands from './modules/commands/useCommands.js'
 
 dotenv.config()
-const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", 'GUILD_VOICE_STATES'] });
+const client:Client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", 'GUILD_VOICE_STATES'] });
 
 client.on('ready', () => console.log('Bot is ready'));
 

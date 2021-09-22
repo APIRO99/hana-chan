@@ -1,4 +1,6 @@
-export const useDeployCommand:any = (client:any, authorOwner:boolean) => {
+import { Client } from "discord.js";
+
+export const useDeployCommand:any = (client:Client, authorOwner:boolean) => {
   client.on('interactionCreate', async (interaction:any) => {
     if (!interaction.isCommand()) return;
     
