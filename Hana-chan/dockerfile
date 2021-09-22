@@ -1,0 +1,6 @@
+FROM ubuntu
+
+
+RUN sudo snap install ffmpeg \
+    cd /app \
+    npm i
